@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import FastagProvider from "./components/FastagProvider";
 import AboutSection from "./components/AboutSection";
+import FAQSection from "./components/FAQSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <FastagProvider />
       <AboutSection />
+      <FAQSection />
     </div>
   );
 }
