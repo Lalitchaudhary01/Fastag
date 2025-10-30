@@ -38,3 +38,8 @@ git clone https://github.com/your-username/logiclead-frontend.git
 
  3️⃣ Install Dependencies
  npm install
+
+ 🏃 Run the Project
+Start the app locally with:
+
+npm run dev
