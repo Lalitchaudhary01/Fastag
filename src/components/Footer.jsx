@@ -4,29 +4,28 @@ import { Mail, MapPin } from "lucide-react";
 function Footer() {
   return (
     <footer className="bg-teal-700 text-white">
+      {/* Banner Section */}
       <div className="relative w-full h-[70vh] sm:h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
         <img
           src="https://logiclead.in/assets/img/banking_logo/rechargeicon_20240803130432465829.jpg"
           alt="FASTag Recharge Banner"
           className="w-full h-full object-cover object-center"
         />
-
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
       </div>
 
+      {/* Footer Content */}
       <div className="bg-teal-700 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-12 lg:gap-16">
+            {/* Logo + Description */}
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
-                <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-lg">
-                  <img
-                    src="https://logiclead.in/assets/img/banking_logo/logic_img2.png"
-                    alt="Logiclead Logo"
-                    className="w-9 h-9 object-contain"
-                  />
-                </div>
-                <span className="text-3xl font-bold">Logiclead</span>
+                <img
+                  src="https://logiclead.in/assets/img/banking_logo/logic_img2.png"
+                  alt="Logiclead Logo"
+                  className="w-36 h-auto object-contain"
+                />
               </div>
               <p className="text-teal-100 leading-relaxed text-sm">
                 Your trusted platform for quick and secure FASTag recharge.
@@ -35,6 +34,7 @@ function Footer() {
               </p>
             </div>
 
+            {/* Quick Links */}
             <div>
               <h3 className="text-xl font-bold mb-6 text-white">Quick Links</h3>
               <ul className="space-y-3">
@@ -56,6 +56,7 @@ function Footer() {
               </ul>
             </div>
 
+            {/* Contact Info */}
             <div>
               <h3 className="text-xl font-bold mb-6 text-white">Reach Us</h3>
               <div className="space-y-4">
@@ -92,6 +93,7 @@ function Footer() {
             </div>
           </div>
 
+          {/* Bottom Bar */}
           <div className="mt-16 pt-8 border-t border-teal-600">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-teal-100 text-sm">
