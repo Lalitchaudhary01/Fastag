@@ -7,27 +7,22 @@ function Navbar() {
 
   return (
     <>
-      {/* Navbar */}
       <nav className="bg-teal-700 text-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <div className="w-6 h-6 bg-teal-700 rounded"></div>
-              </div>
-              <span className="text-2xl font-bold">Logiclead</span>
+              <img
+                src="https://logiclead.in/assets/img/banking_logo/logic_img2.png"
+                alt="logo"
+                className="h-10 w-auto"
+              />
             </div>
 
-            {/* Wallet + Menu + User */}
             <div className="flex items-center space-x-4">
-              {/* Wallet - Always visible */}
               <button className="flex items-center space-x-2 px-4 py-2 bg-teal-600 hover:bg-teal-800 rounded-lg transition">
                 <Wallet className="w-5 h-5" />
-                <span>Wallet</span>
               </button>
 
-              {/* Mobile Menu Button */}
               <div className="md:hidden">
                 <button
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -41,7 +36,6 @@ function Navbar() {
                 </button>
               </div>
 
-              {/* User (Desktop Only) */}
               <div className="hidden md:flex">
                 <button
                   onClick={() => setIsLoginOpen(true)}
@@ -54,7 +48,6 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-teal-800 border-t border-teal-600">
             <div className="px-4 py-3 space-y-3">
@@ -73,17 +66,15 @@ function Navbar() {
         )}
       </nav>
 
-      {/* Login Modal with blur background */}
       {isLoginOpen && (
         <div
           onClick={() => setIsLoginOpen(false)}
-          className="fixed inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm z-50"
+          className="fixed inset-0 flex items-center justify-center bg-black/40 backdrop-blur-md z-50"
         >
           <div
             onClick={(e) => e.stopPropagation()}
             className="bg-white rounded-xl shadow-xl w-96 max-w-[90%] p-6 relative"
           >
-            {/* Close Button */}
             <button
               onClick={() => setIsLoginOpen(false)}
               className="absolute top-3 right-3 text-gray-500 hover:text-black"
@@ -91,7 +82,6 @@ function Navbar() {
               <X className="w-5 h-5" />
             </button>
 
-            {/* Login Form */}
             <h2 className="text-2xl font-semibold text-center mb-4">Login</h2>
 
             <label className="block text-sm mb-1 text-gray-600">Email</label>

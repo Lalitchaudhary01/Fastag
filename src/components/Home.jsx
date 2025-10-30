@@ -13,10 +13,8 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
               FASTag Recharge Online at Logiclead
@@ -40,7 +38,6 @@ function Home() {
             </div>
           </div>
 
-          {/* Right Side - Recharge Card */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-teal-700 text-white px-6 py-4 flex items-center justify-between">
               <h2 className="text-xl font-semibold">FASTag Recharge</h2>
@@ -79,9 +76,16 @@ function Home() {
         </div>
       </div>
 
-      {/* Highway Image Section */}
-      <div className="w-full h-64 mt-12 overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-r from-green-800 via-green-700 to-green-600 opacity-50"></div>
+      <div className="w-full h-64 mt-12 overflow-hidden relative">
+        {/* Banner Image */}
+        <img
+          src="https://logiclead.in/assets/img/Website%20Banner%204.png"
+          alt="Logiclead Banner"
+          className="w-full h-full object-cover"
+        />
+
+        {/* Optional Overlay for slight dark blur */}
+        <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
       </div>
     </div>
   );

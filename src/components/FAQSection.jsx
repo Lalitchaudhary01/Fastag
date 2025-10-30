@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
-// FAQ Section Component
 function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -40,14 +39,12 @@ function FAQSection() {
   return (
     <div className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions
           </h2>
         </div>
 
-        {/* FAQ Items */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
@@ -79,7 +76,6 @@ function FAQSection() {
           ))}
         </div>
 
-        {/* Bottom Banner/Text */}
         <div className="mt-16 text-center">
           <div className="inline-block bg-teal-600 text-white px-8 py-4 rounded-lg shadow-lg">
             <h3 className="text-2xl md:text-3xl font-bold tracking-wide">
